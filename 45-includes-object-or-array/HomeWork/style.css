@@ -1,0 +1,51 @@
+body{
+    background-color: #222;
+}
+
+.slider {
+    color: orangered;
+    font-family: Arial;
+
+    width: 300px;
+    height: 500px;
+    margin: 50px auto;
+
+    background-image: url(/45-includes-object-or-array/HomeWork/653-536x354.jpeg);
+    text-align: center;
+
+    text-shadow: 1px 1px 3px black;
+}
+
+.slider img {
+    height: 400px;
+    width: 300px;
+
+    object-fit: cover;
+    object-position: top;
+
+    filter: grayscale();
+    
+    border-bottom: 2px solid orangered;
+
+    transition: 0.7s;
+}
+
+.slider .arrow-up {
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+
+    display: block;
+    transform: translateY(-135px);
+}
+.slider .arrow-down {
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+
+    display: block;
+    transform: translateY(-155px);
+}
+.slider:target img {
+    height: 100px;
+}
